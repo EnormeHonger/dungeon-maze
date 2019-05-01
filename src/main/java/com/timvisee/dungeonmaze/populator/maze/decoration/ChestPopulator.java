@@ -100,19 +100,21 @@ public class ChestPopulator extends MazeRoomBlockPopulator {
 		if (random.nextInt(100) < 80) items.add(new ItemStack(Material.TORCH, 4, (short) 0));
 		if (random.nextInt(100) < 40) items.add(new ItemStack(Material.TORCH, 8, (short) 0));
 		if (random.nextInt(100) < 20) items.add(new ItemStack(Material.TORCH, 12, (short) 0));
-		if (random.nextInt(100) < 40) items.add(new ItemStack(Material.APPLE, 1, (short) 0));
+		if (random.nextInt(100) < 40) items.add(new ItemStack(Material.APPLE, 7, (short) 0));
 		if (random.nextInt(100) < 10) items.add(new ItemStack(Material.ARROW, 16, (short) 0));
 		if (random.nextInt(100) < 5) items.add(new ItemStack(Material.ARROW, 24, (short) 0));
 		if (random.nextInt(100) < 20) items.add(new ItemStack(Material.DIAMOND, 1, (short) 0));
+		if (random.nextInt(100) < 10) items.add(new ItemStack(Material.DIAMOND, 2, (short) 0));
+		if (random.nextInt(100) < 5) items.add(new ItemStack(Material.DIAMOND, 5, (short) 0));
 		if (random.nextInt(100) < 50) items.add(new ItemStack(Material.IRON_INGOT, 1, (short) 0));
 		if (random.nextInt(100) < 60) items.add(new ItemStack(Material.GOLD_INGOT, 1, (short) 0));
 		if (random.nextInt(100) < 10) items.add(new ItemStack(Material.IRON_SWORD, 1, (short) 0));
 		if (random.nextInt(100) < 40) items.add(new ItemStack(Material.WOOD_SWORD, 1, (short) 0));
 		if (random.nextInt(100) < 20) items.add(new ItemStack(Material.STONE_SWORD, 1, (short) 0));
 		if (random.nextInt(100) < 80) items.add(new ItemStack(Material.WHEAT, 1, (short) 0));
-		if (random.nextInt(100) < 10) items.add(new ItemStack(Material.WHEAT, 2, (short) 0));
-		if (random.nextInt(100) < 5) items.add(new ItemStack(Material.WHEAT, 3, (short) 0));
-		if (random.nextInt(100) < 20) items.add(new ItemStack(Material.BREAD, 1, (short) 0));
+		if (random.nextInt(100) < 10) items.add(new ItemStack(Material.WHEAT, 4, (short) 0));
+		if (random.nextInt(100) < 5) items.add(new ItemStack(Material.WHEAT, 16, (short) 0));
+		if (random.nextInt(100) < 20) items.add(new ItemStack(Material.BREAD, 4, (short) 0));
 		if (random.nextInt(100) < 20) items.add(new ItemStack(Material.LEATHER_HELMET, 1, (short) 0));
 		if (random.nextInt(100) < 20) items.add(new ItemStack(Material.LEATHER_CHESTPLATE, 1, (short) 0));
 		if (random.nextInt(100) < 20) items.add(new ItemStack(Material.LEATHER_LEGGINGS, 1, (short) 0));
@@ -128,19 +130,27 @@ public class ChestPopulator extends MazeRoomBlockPopulator {
 		if (random.nextInt(100) < 30) items.add(new ItemStack(Material.FLINT, 3, (short) 0));
 		if (random.nextInt(100) < 20) items.add(new ItemStack(Material.FLINT, 5, (short) 0));
 		if (random.nextInt(100) < 10) items.add(new ItemStack(Material.FLINT, 7, (short) 0));
-		if (random.nextInt(100) < 80) items.add(new ItemStack(Material.PORK, 1, (short) 0));
-		if (random.nextInt(100) < 10) items.add(new ItemStack(Material.GRILLED_PORK, 1, (short) 0));
-		if (random.nextInt(100) < 15) items.add(new ItemStack(Material.REDSTONE, 5, (short) 0));
-		if (random.nextInt(100) < 10) items.add(new ItemStack(Material.REDSTONE, 8, (short) 0));
-		if (random.nextInt(100) < 5) items.add(new ItemStack(Material.REDSTONE, 13, (short) 0));
-		if (random.nextInt(100) < 3) items.add(new ItemStack(Material.REDSTONE, 21, (short) 0));
-		if (random.nextInt(100) < 10) items.add(new ItemStack(Material.COMPASS, 1, (short) 0));
-		if (random.nextInt(100) < 80) items.add(new ItemStack(Material.RAW_FISH, 1, (short) 0));
-		if (random.nextInt(100) < 20) items.add(new ItemStack(Material.COOKED_FISH, 1, (short) 0));
+		if (random.nextInt(100) < 80) items.add(new ItemStack(Material.PORK, 4, (short) 0));
+		if (random.nextInt(100) < 10) items.add(new ItemStack(Material.GRILLED_PORK, 16, (short) 0));
+		if (random.nextInt(100) < 15) items.add(new ItemStack(Material.REDSTONE, 10, (short) 0));
+		if (random.nextInt(100) < 10) items.add(new ItemStack(Material.REDSTONE, 24, (short) 0));
+		if (random.nextInt(100) < 5) items.add(new ItemStack(Material.REDSTONE, 30, (short) 0));
+		if (random.nextInt(100) < 3) items.add(new ItemStack(Material.REDSTONE, 32, (short) 0));
+		if (random.nextInt(100) < 40) items.add(new ItemStack(Material.COMPASS, 1, (short) 0));
+		if (random.nextInt(100) < 80) items.add(new ItemStack(Material.RAW_FISH, 6, (short) 0));
+		if (random.nextInt(100) < 20) items.add(new ItemStack(Material.COOKED_FISH, 12, (short) 0));
 		if (random.nextInt(100) < 20) items.add(new ItemStack(Material.INK_SACK, 1, (short) 3));
-		if (random.nextInt(100) < 5) items.add(new ItemStack(Material.CAKE, 1, (short) 0));
-		if (random.nextInt(100) < 80) items.add(new ItemStack(Material.COOKIE, 3, (short) 0));
-		if (random.nextInt(100) < 20) items.add(new ItemStack(Material.COOKIE, 5, (short) 0));
+		if (random.nextInt(100) < 10) items.add(new ItemStack(Material.CAKE, 1, (short) 0));
+		if (random.nextInt(100) < 10) items.add(new ItemStack(Material.CAKE, 1, (short) 0));
+		if (random.nextInt(100) < 80) items.add(new ItemStack(Material.COOKIE, 6, (short) 0));
+		if (random.nextInt(100) < 60) items.add(new ItemStack(Material.EXPERIENCE_BOTTLE, 1, (short) 0));
+		if (random.nextInt(100) < 2) items.add(new ItemStack(Material.DIAMOND_BLOCK, 1, (short) 0));
+		if (random.nextInt(100) < 20) items.add(new ItemStack(Material.GOLDEN_APPLE, 1, (short) 0));
+		if (random.nextInt(100) < 10) items.add(new ItemStack(Material.DIAMOND_HORSE_ARMOR, 1, (short) 0));
+		if (random.nextInt(100) < 20) items.add(new ItemStack(Material.GOLDEN_HORSE_ARMOR, 1, (short) 0));
+		if (random.nextInt(100) < 50) items.add(new ItemStack(Material.IRON_HORSE_ARMOR, 1, (short) 0));
+		if (random.nextInt(100) < 80) items.add(new ItemStack(Material.SHIELD, 1, (short) 0));
+		
 
 		int itemCountInChest;
 		switch (random.nextInt(8)) {
@@ -151,7 +161,7 @@ public class ChestPopulator extends MazeRoomBlockPopulator {
 			itemCountInChest = 2;
 			break;
 		case 2:
-			itemCountInChest = 3;
+			itemCountInChest = 2;
 			break;
 		case 3:
 			itemCountInChest = 3;
@@ -163,10 +173,10 @@ public class ChestPopulator extends MazeRoomBlockPopulator {
 			itemCountInChest = 4;
 			break;
 		case 6:
-			itemCountInChest = 4;
+			itemCountInChest = 5;
 			break;
 		case 7:
-			itemCountInChest = 5;
+			itemCountInChest = 6;
 			break;
 		default:
 			itemCountInChest = 3;
