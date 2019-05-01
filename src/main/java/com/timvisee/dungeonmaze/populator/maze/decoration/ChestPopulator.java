@@ -72,7 +72,7 @@ public class ChestPopulator extends MazeRoomBlockPopulator {
 				Chest chest = (Chest) chestBlock.getState();
 				if (chest.getInventory() != null) {
 					// Generate new inventory contents
-					List < ItemStack > contents = generateChestContents(rand);
+					List < ItemStack > contents = generateChestContents(rand, extraLoot);
 
 					// Call the chest generation event
 					GenerationChestEvent event = new GenerationChestEvent(chestBlock, rand, contents, MazeStructureType.UNSTRUCTURE);
