@@ -36,6 +36,14 @@ public class ChestPopulator extends MazeRoomBlockPopulator {
         final int chestX = x + rand.nextInt(6) + 1;
         final int chestY = args.getFloorY() + 1;
         final int chestZ = z + rand.nextInt(6) + 1;
+	// magic number 75 because this is the highest y where dungeon can generate
+	final int chestLevel = 75 - chestY;
+	// calculate extra loot
+	int extraLoot = 0;
+	for (int i = 0; i < chestLevel; i = i + 7)
+		extraLoot++;
+	
+	
 
         if(!(chunk.getBlock(chestX, chestY - 1, chestZ).getType() == Material.AIR)) {
             Block chestBlock = chunk.getBlock(chestX, chestY, chestZ);
@@ -213,6 +221,9 @@ public class ChestPopulator extends MazeRoomBlockPopulator {
 			itemCountInChest = 3;
 		}
 		
+		// Increase item size depending on depth
+		itemCountInChest = itemCountInChest + extraLoot;
+			
 		// Create a list of item contents with the right amount of items
 		List<ItemStack> newContents = new ArrayList<>();
 		for (int i = 0; i < itemCountInChest; i++)
