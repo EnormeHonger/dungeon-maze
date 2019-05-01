@@ -143,13 +143,12 @@ public class ChestPopulator extends MazeRoomBlockPopulator {
 		if (random.nextInt(100) < 10) items.add(new ItemStack(Material.CAKE, 1, (short) 0));
 		if (random.nextInt(100) < 10) items.add(new ItemStack(Material.CAKE, 1, (short) 0));
 		if (random.nextInt(100) < 80) items.add(new ItemStack(Material.COOKIE, 6, (short) 0));
-		if (random.nextInt(100) < 60) items.add(new ItemStack(Material.EXPERIENCE_BOTTLE, 1, (short) 0));
+		if (random.nextInt(100) < 60) items.add(new ItemStack(Material.EXP_BOTTLE, 1, (short) 0));
+		if (random.nextInt(100) < 20) items.add(new ItemStack(Material.EXP_BOTTLE, 1, (short) 0));
 		if (random.nextInt(100) < 2) items.add(new ItemStack(Material.DIAMOND_BLOCK, 1, (short) 0));
 		if (random.nextInt(100) < 20) items.add(new ItemStack(Material.GOLDEN_APPLE, 1, (short) 0));
-		if (random.nextInt(100) < 10) items.add(new ItemStack(Material.DIAMOND_HORSE_ARMOR, 1, (short) 0));
-		if (random.nextInt(100) < 20) items.add(new ItemStack(Material.GOLDEN_HORSE_ARMOR, 1, (short) 0));
-		if (random.nextInt(100) < 50) items.add(new ItemStack(Material.IRON_HORSE_ARMOR, 1, (short) 0));
-		if (random.nextInt(100) < 80) items.add(new ItemStack(Material.SHIELD, 1, (short) 0));
+		if (random.nextInt(100) < 10) items.add(new ItemStack(Material.BREWING_STAND, 1, (short) 0));
+		if (random.nextInt(100) < 80) items.add(new ItemStack(Material.SADDLE, 1, (short) 0));
 		
 
 		int itemCountInChest;
